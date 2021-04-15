@@ -2,8 +2,11 @@ import markdown
 import os
 import shelve
 
+
 # Import the framework
 from flask import Flask, g
+import RPi.GPIO as GPIO # RPi.GPIO can be referred as GPIO from now
+import time
 from flask_restful import Resource, Api, reqparse
 
 # Create an instance of Flask
